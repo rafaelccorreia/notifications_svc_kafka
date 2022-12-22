@@ -21,3 +21,9 @@ model Notification {
 
   @@index([recipientId])
 }
+
+model Test {
+  id   String @id @default(cuid())
+  name String
+  test String
+}
